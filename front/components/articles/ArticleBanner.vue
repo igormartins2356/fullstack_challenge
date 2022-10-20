@@ -177,6 +177,9 @@ export default {
     }
   },
   methods: {
+    goToSeeMore(){
+      window.open(this.article.url, '_blank');
+    },
     deleteArticle(){
       Api.Articles.delete(this.article.id).then(()=>{
         this.reloadArticles()
