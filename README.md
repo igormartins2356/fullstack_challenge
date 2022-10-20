@@ -35,7 +35,7 @@ Este projeto foi um desafio fullstack, onde deviamos pegar os dados SpaceFlightN
 
 - Apos todas as dependencias baixadas saia da pasta do front e entra na pasta da api: cd ../api
 
-- Execute o comando para baixar as dependencias da api: bundle
+- Execute o comando para baixar as dependencias da api: bundle ou bundle install
 
 - Crie o banco de dados:
 
