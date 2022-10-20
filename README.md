@@ -31,7 +31,11 @@ Este projeto foi um desafio fullstack, onde deviamos pegar os dados SpaceFlightN
 
 - Entre na pasta do front: cd front
 
-- Execute o comando para baixar as dependencias: yarn
+- Execute o comando para baixar as dependencias:
+
+```bash
+# instala dependencies
+$ npm install ou yarn
 
 - Apos todas as dependencias baixadas saia da pasta do front e entra na pasta da api: cd ../api
 
