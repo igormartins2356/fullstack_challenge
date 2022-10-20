@@ -98,6 +98,7 @@ export default {
     },
     reloadArticles(){
       this.dialog_edit = false
+      this.$emit('reloadArticles')
     }
   }
 };

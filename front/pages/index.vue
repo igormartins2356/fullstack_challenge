@@ -1,8 +1,8 @@
 <template>
   <div>
-    <Header @filterBySearch="setSearch" @filterByOldest="is_filter_by_oldest = true" @filterByNewest="is_filter_by_oldest = false"/>
+    <Header @reloadArticles="reloadArticles" @filterBySearch="setSearch" @filterByOldest="is_filter_by_oldest = true" @filterByNewest="is_filter_by_oldest = false"/>
     <Banner />
-    <articles :is_filter_by_oldest="is_filter_by_oldest" :search="search"></articles>
+    <articles ref="articles" :is_filter_by_oldest="is_filter_by_oldest" :search="search"></articles>
     <Footer/>
   </div>
 </template>
@@ -24,6 +24,9 @@ export default {
   methods: {
     setSearch(nV){
       this.search = nV
+    },
+    reloadArticles(){
+      this.$refs.articles.reloadArticles()
     }
   },  
   components: {

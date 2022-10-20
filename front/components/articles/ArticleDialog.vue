@@ -74,7 +74,7 @@ export default {
         newsSite: 'Fullstack Challenge',
         publishedAt: dayjs(),
         url: null,
-        imageUrl: 'https://www.google.com/url?sa=i&url=https%3A%2F%2Fspaceperspective.com%2F&psig=AOvVaw3cTf211Mn_V6y91yyA7BFZ&ust=1666300432013000&source=images&cd=vfe&ved=0CA0QjRxqFwoTCLjh5Pya7foCFQAAAAAdAAAAABAE'
+        imageUrl: 'http://www.nasa.gov/sites/default/files/thumbnails/image/web_first_images_release.png'
       }
       return article
     },
