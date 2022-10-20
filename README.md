@@ -19,6 +19,8 @@ Este projeto foi um desafio fullstack, onde deviamos pegar os dados SpaceFlightN
 
 ## Instruções
 
+```bash
+
 ### Como configurar o projeto
 
 - Crie uma pasta para armazenar os aquivos
@@ -33,7 +35,6 @@ Este projeto foi um desafio fullstack, onde deviamos pegar os dados SpaceFlightN
 
 - Execute o comando para baixar as dependencias:
 
-```bash
 # instala dependencies
 $ npm install ou yarn
 
