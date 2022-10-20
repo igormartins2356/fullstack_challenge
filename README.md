@@ -19,8 +19,6 @@ Este projeto foi um desafio fullstack, onde deviamos pegar os dados SpaceFlightN
 
 ## Instruções
 
-```bash
-
 ### Como configurar o projeto
 
 - Crie uma pasta para armazenar os aquivos
@@ -34,9 +32,7 @@ Este projeto foi um desafio fullstack, onde deviamos pegar os dados SpaceFlightN
 - Entre na pasta do front: cd front
 
 - Execute o comando para baixar as dependencias:
-
-# instala dependencies
-$ npm install ou yarn
+  - npm install ou yarn
 
 - Apos todas as dependencias baixadas saia da pasta do front e entra na pasta da api: cd ../api
 
