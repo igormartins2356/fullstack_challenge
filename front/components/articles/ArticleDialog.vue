@@ -1,9 +1,8 @@
 <template>
   <div>
-    <v-dialog v-model="dialog_edit" max-width="500px">
+    <v-dialog v-model="dialog_edit" max-width="500px" persistent>
       <v-card>
         <v-toolbar
-          persistent
           dense
           color="#302E53"
           dark
