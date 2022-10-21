@@ -7,14 +7,18 @@ class Api::V1::ArticlesController < ApplicationController
 
   # GET /articles
   def index
+    sort_dir = index_params[:sort_dir] || 'asc'
+    page = index_params[:page] || 1
+    limit = index_params[:limit] || 10
     if index_params[:search].present?
-    @pagy, @articles = pagy(Article.all.where("title like ?", "%#{index_params[:search]}%").order("articles.publishedAt #{index_params[:sort_dir]}"), page: index_params[:page].to_i, items: index_params[:limit].to_i)
+    @pagy, @articles = pagy(Article.all.where("title like ?", "%#{index_params[:search]}%").order("articles.publishedAt #{sort_dir}"), page: page.to_i, items: limit.to_i)
     render json: { data: @articles,
                   total: @pagy.count }
     else
-      @pagy, @articles = pagy(Article.all.order("articles.publishedAt #{index_params[:sort_dir]}"), page: index_params[:page].to_i, items: index_params[:limit].to_i)
+      @pagy, @articles = pagy(Article.all.order("articles.publishedAt #{sort_dir}"), page: page.to_i, items: limit.to_i)
       render json: { data: @articles,
                     total: @pagy.count }
+      
     end
   end
 
